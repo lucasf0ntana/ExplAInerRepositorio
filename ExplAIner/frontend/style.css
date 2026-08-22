@@ -5,28 +5,29 @@
 }
 
 :root {
-    --primaria: #111827;
-    --primaria-escura: #1f2937;
-    --fundo: #f3f5f8;
-    --cartao: #ffffff;
-    --texto: #111827;
-    --texto-suave: #6b7280;
-    --borda: #e5e7eb;
-    --verde: #16a34a;
-    --vermelho: #dc2626;
+    --primaria: #2f3f32;
+    --primaria-escura: #27362a;
+    --fundo: #f4efe8;
+    --fundo-escuro: #ebe0d2;
+    --cartao: #fffdf9;
+    --texto: #243125;
+    --texto-suave: #63715f;
+    --borda: #d9cfbf;
+    --verde: #4b7a4f;
+    --vermelho: #a54b3d;
 }
 
 body {
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    background: var(--fundo);
+    background: linear-gradient(135deg, #f7f1e7 0%, #efe4d5 100%);
     color: var(--texto);
 }
 
 .pagina {
-    width: min(900px, 94vw);
+    width: min(980px, 95vw);
     margin: 0 auto;
-    padding: 1.4rem 0 2.2rem;
+    padding: 1.2rem 0 2rem;
 }
 
 .cabecalho {
@@ -35,8 +36,11 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding-bottom: 0.8rem;
-    border-bottom: 1px solid var(--borda);
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    background: rgba(255, 253, 249, 0.9);
+    box-shadow: 0 8px 24px rgba(36, 49, 37, 0.06);
 }
 
 .marca {
@@ -48,13 +52,13 @@ body {
 .logo {
     width: 46px;
     height: 46px;
-    border-radius: 10px;
+    border-radius: 12px;
     display: grid;
     place-items: center;
-    background: var(--primaria);
+    background: linear-gradient(135deg, #4c6650, #2f3f32);
     color: white;
     font-weight: 700;
-    box-shadow: none;
+    box-shadow: 0 8px 18px rgba(47, 63, 50, 0.16);
 }
 
 .marca h1 {
@@ -69,39 +73,46 @@ body {
 
 .menu-navegacao {
     display: flex;
-    gap: 0.6rem;
+    gap: 0.4rem;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0.35rem;
+    border: 1px solid #e8dfd0;
+    border-radius: 999px;
+    background: #f6efe7;
 }
 
 .link-navegacao {
     text-decoration: none;
     color: var(--texto-suave);
-    padding: 0.5rem 0.7rem;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    transition: background 180ms ease, color 180ms ease;
+    padding: 0.5rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    transition: all 180ms ease;
+    line-height: 1;
 }
 
 .link-navegacao.ativo,
 .link-navegacao:hover {
-    background: #f3f4f6;
-    color: var(--texto);
+    background: var(--primaria);
+    color: white;
+    box-shadow: 0 6px 12px rgba(47, 63, 50, 0.15);
 }
 
 .cartao {
     background: var(--cartao);
     border: 1px solid var(--borda);
-    border-radius: 12px;
+    border-radius: 18px;
     padding: 1.2rem;
-    box-shadow: 0 1px 2px rgba(17, 24, 39, 0.04);
+    box-shadow: 0 12px 30px rgba(36, 49, 37, 0.05);
 }
 
 .intro-bloco {
-    margin-bottom: 0.9rem;
-    padding: 0.8rem 0.9rem;
-    border: 1px solid #eef2f7;
-    border-radius: 10px;
-    background: #f8fafc;
+    margin-bottom: 1rem;
+    padding: 0.9rem 1rem;
+    border-left: 4px solid #7d8e73;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #f7efe3, #fcfaf7);
 }
 
 .intro-kicker {
@@ -109,12 +120,12 @@ body {
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #6b7280;
-    margin-bottom: 0.2rem;
+    color: #6c7667;
+    margin-bottom: 0.25rem;
 }
 
 .intro-text {
-    color: #374151;
+    color: #4d574d;
     font-size: 0.95rem;
 }
 
@@ -123,7 +134,7 @@ body {
 }
 
 .titulo-cartao h2 {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     margin-bottom: 0.35rem;
 }
 
@@ -149,17 +160,17 @@ body {
 }
 
 input {
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
+    border: 1px solid #d8d0c3;
+    border-radius: 10px;
     padding: 0.8rem 0.85rem;
     font-size: 0.95rem;
-    background: #fcfdff;
+    background: #fcfaf7;
     color: var(--texto);
 }
 
 input:focus {
     outline: none;
-    border-color: #9ca3af;
+    border-color: #b1a88f;
     box-shadow: none;
 }
 
@@ -170,25 +181,26 @@ input:focus {
 button {
     grid-column: 1 / -1;
     border: none;
-    border-radius: 8px;
-    padding: 0.85rem 0.95rem;
-    background: var(--primaria);
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+    background: linear-gradient(135deg, #4c6650, #2f3f32);
     color: white;
     font-weight: 600;
     cursor: pointer;
-    transition: background 180ms ease;
-    box-shadow: none;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+    box-shadow: 0 8px 16px rgba(47, 63, 50, 0.12);
 }
 
 button:hover {
-    background: var(--primaria-escura);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 18px rgba(47, 63, 50, 0.16);
 }
 
 .resultado {
     margin-top: 1rem;
     padding: 0.95rem 1rem;
-    border-radius: 10px;
-    background: #f9fafb;
+    border-radius: 12px;
+    background: #f8f3ea;
     border: 1px solid var(--borda);
 }
 
@@ -205,6 +217,12 @@ button:hover {
     .cabecalho {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .menu-navegacao {
+        width: 100%;
+        border-radius: 14px;
+        justify-content: flex-start;
     }
 
     .grade-formulario {
