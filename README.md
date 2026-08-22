@@ -209,3 +209,15 @@ Acesse:
 ```text
 http://127.0.0.1:5500
 ```
+## Funcionalidades Implementadas
+
+1. Cadastrar aluno
+2. Consultar aluno por ID
+3. Listar todos os alunos cadastrados
+4. Atualizar dados cadastrais do aluno
+5. Excluir cadastro de aluno com confirmação de segurança
+6. Visualizar status de gamificação do aluno (Pontos e Foguinhos)
+7. Cadastrar temas de estudo
+8. Gerenciar banco de questões
+9. Criar e atribuir desafios
+10. Consultar ranking de alunos
