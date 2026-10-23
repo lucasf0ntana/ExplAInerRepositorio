@@ -221,3 +221,13 @@ http://127.0.0.1:5500
 8. Gerenciar banco de questões
 9. Criar e atribuir desafios
 10. Consultar ranking de alunos
+11. Excluir temas cadastrados.
+12. Cadastrar questões no banco de questões.
+13. Listar as questões cadastradas.
+14. Atualizar questões existentes.
+15. Excluir questões cadastradas.
+16. Cadastrar desafios de estudo.
+17. Consultar desafios pelo nome.
+18. Atualizar e excluir desafios cadastrados.
+19. Associar questões aos desafios.
+20. Registrar desafios vinculados aos alunos.
